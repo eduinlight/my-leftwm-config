@@ -6,4 +6,4 @@
 - stack: Nodejs + Nestjs + Mongodb + GIT + Docker + ESlint + Typescript + Gitlab-CI
 
 # Image
-![eduinlight-leftwm-theme](path "https://github.com/eduinlight/eduinlight-leftwm-theme/blob/main/eduinlight-leftwm-theme.jpeg")
+![eduinlight-leftwm-theme](path "https://github.com/eduinlight/eduinlight-leftwm-theme/raw/main/eduinlight-leftwm-theme.jpeg")
