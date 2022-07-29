@@ -13,6 +13,18 @@ focus_behaviour = "Sloppy"
 focus_new_windows = true
 
 [[keybind]]
+command = "Execute"
+value = "setxkbmap -layout us -variant altgr-intl"
+modifier = ["Control", "Shift"]
+key = "1"
+
+[[keybind]]
+command = "Execute"
+value = "setxkbmap -layout ru"
+modifier = ["Control", "Shift"]
+key = "2"
+
+[[keybind]]
 command = "ToggleFullScreen"
 modifier = []
 key = "F11"
