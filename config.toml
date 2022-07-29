@@ -46,13 +46,13 @@ key = "XF86XK_AudioLowerVolume"
 
 [[keybind]]
 command = "Execute"
-value = "scrot '/home/light/Pictures/%Y-%m-%d_$wx$h.jpeg'"
+value = "scrot ~/Pictures/%Y-%m-%d_$wx$h.jpeg"
 modifier = []
 key = "Print"
 
 [[keybind]]
 command = "Execute"
-value = "scrot '/home/light/Pictures/%Y-%m-%d_$wx$h.jpeg' -s"
+value = "scrot ~/Pictures/%Y-%m-%d_$wx$h.jpeg -s"
 modifier = ["modkey"]
 key = "Print"
 
@@ -70,7 +70,7 @@ key = "e"
 
 [[keybind]]
 command = "Execute"
-value = "rofi -show run"
+value = "~/.config/leftwm/themes/eduinlight-theme/rofi/launcher.sh"
 modifier = ["modkey"]
 key = "p"
 
