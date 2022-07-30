@@ -39,15 +39,6 @@ if [ -x "$(command -v xscreensaver)" ]; then
   xscreensaver -no-splash
 fi
 
-if [ -x "$(command -v volumeicon)" ]; then
-  echo "here"
-  volumeicon
-fi
-
-if [ -x "$(command -v cbatticon)" ]; then
-  cbatticon -u 20 -i notification -c \"poweroff\" -l 15 -r 3
-fi
-
 if [ -x "$(command -v polkit-dumb-agent)" ]; then
   polkit-dumb-agent
 fi

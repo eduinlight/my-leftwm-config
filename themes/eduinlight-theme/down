@@ -13,7 +13,5 @@ pkill compton
 pkill picom
 pkill polybar
 pkill xscreensaver
-pkill volumeicon
-pkill cbatticon
 pkill polkit-dumb-agent
 pkill notification-daemon
