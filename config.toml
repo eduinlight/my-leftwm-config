@@ -3,7 +3,7 @@ mousekey = "Mod4"
 workspaces = []
 tags = ["main", "dev1", "dev2", "dev3", "game", "mus", "vid", "social", "mail"]
 layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "LeftMain", "CenterMain", "CenterMainBalanced", "CenterMainFluid", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
-layout_mode = "Workspace"
+layout_mode = "Tag"
 insert_behavior = "Bottom"
 scratchpad = []
 window_rules = []
@@ -11,6 +11,12 @@ disable_current_tag_swap = false
 disable_tile_drag = false
 focus_behaviour = "Sloppy"
 focus_new_windows = true
+
+[[keybind]]
+command = "SetLayout"
+value = "MainAndVertStack"
+modifier = ["modkey", "Shift"]
+key = "space"
 
 [[keybind]]
 command = "Execute"
@@ -83,13 +89,13 @@ key = "e"
 [[keybind]]
 command = "Execute"
 value = "~/.config/leftwm/themes/eduinlight-theme/rofi/launcher.sh"
-modifier = ["modkey"]
-key = "p"
+modifier = ["modkey", "Shift"]
+key = "Return"
 
 [[keybind]]
 command = "Execute"
 value = "alacritty"
-modifier = ["modkey", "Shift"]
+modifier = ["modkey"]
 key = "Return"
 
 [[keybind]]
@@ -144,7 +150,7 @@ key = "j"
 command = "MoveWindowTop"
 value = ""
 modifier = ["modkey"]
-key = "Return"
+key = "space"
 
 [[keybind]]
 command = "FocusWindowUp"
