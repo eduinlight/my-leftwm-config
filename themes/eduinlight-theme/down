@@ -14,4 +14,4 @@ pkill picom
 pkill polybar
 pkill xscreensaver
 pkill polkit-dumb-agent
-pkill notification-daemon
+pkill dunst

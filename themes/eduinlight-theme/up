@@ -36,11 +36,14 @@ done
 
 #
 if [ -x "$(command -v xscreensaver)" ]; then
-  xscreensaver -no-splash
+  xscreensaver -no-splash&
 fi
 
 if [ -x "$(command -v polkit-dumb-agent)" ]; then
-  polkit-dumb-agent
+  polkit-dumb-agent&
 fi
 
-/usr/lib/notification-daemon-1.0/notification-daemon
+if [ -x "$(command -v dunst)" ]; then
+  cp $SCRIPTPATH/dunstrc ~/.config/dunst/dunstrc
+  dunst&
+fi
