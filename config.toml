@@ -35,6 +35,12 @@ command = "ToggleFullScreen"
 modifier = []
 key = "F11"
 
+# [[keybind]]
+# command = "Execute"
+# value = "synclient TouchpadOff=1"
+# modifier = []
+# key = "XF86XK_TouchpadToggle"
+
 [[keybind]]
 command = "Execute"
 value = "lux -s 10%"
