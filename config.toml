@@ -88,7 +88,7 @@ key = "b"
 
 [[keybind]]
 command = "Execute"
-value = "pcmanfm"
+value = "nemo"
 modifier = ["modkey"]
 key = "e"
 
