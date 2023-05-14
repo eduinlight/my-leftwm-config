@@ -34,7 +34,6 @@ do
   let index=indextemp
 done
 
-#
 if [ -x "$(command -v xscreensaver)" ]; then
   xscreensaver -no-splash&
 fi
