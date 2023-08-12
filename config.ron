@@ -25,9 +25,9 @@ Config(
     "4", 
     "5", 
     "6", 
-    "hp-1", 
-    "hp-2", 
-    "hp-3"
+    "work", 
+    "social", 
+    "email"
   ],
   layouts: [
     MainAndVertStack, 
