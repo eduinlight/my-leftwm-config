@@ -5,7 +5,6 @@ definitions_version = 1
 
 [[repos.themes]]
 name = "Orange Forest"
-directory = "/home/light/.config/leftwm/themes/Orange Forest"
 repository = "https://github.com/PVautour/leftwm-theme-orange-forest/"
 commit = "*"
 version = "0.0.2"
@@ -22,7 +21,6 @@ current = false
 
 [[repos.themes]]
 name = "Soothe"
-directory = "/home/light/.config/leftwm/themes/Soothe"
 repository = "https://github.com/b4skyx/leftwm-soothe/"
 commit = "*"
 version = "0.0.1"
@@ -124,7 +122,7 @@ repository = "https://github.com/VentGrey/Epitaph"
 commit = "*"
 version = "0.0.2"
 leftwm_versions = "*"
-current = true
+current = false
 
 [[repos.themes]]
 name = "Ocean-night"
@@ -136,7 +134,6 @@ current = false
 
 [[repos.themes]]
 name = "Flamingo"
-directory = "/home/light/.config/leftwm/themes/Flamingo"
 repository = "https://github.com/necaris/leftwm-theme-flamingo"
 commit = "*"
 version = "0.0.1"
@@ -177,7 +174,7 @@ current = false
 
 [[repos.themes]]
 name = "SpaceJelly"
-repository = "https://gitlab.com/jchand99/space_jelly"
+repository = "https://gitlab.com/leftwmthemes/space_jelly"
 commit = "*"
 version = "1.0.0"
 leftwm_versions = ">0.2.10, <0.3.0"
@@ -207,8 +204,70 @@ version = "0.1.0"
 leftwm_versions = "^0.3.0"
 current = false
 
+[[repos.themes]]
+name = "arch-one-dark"
+repository = "https://github.com/jamesbaker1901/leftwm-arch-one-dark/"
+commit = "*"
+version = "1.0.0"
+leftwm_versions = "^0.3.0"
+current = false
+
+[[repos.themes]]
+name = "Dementive"
+repository = "https://github.com/dementive/leftwm-dementive"
+commit = "*"
+version = "0.1"
+leftwm_versions = "^0.4.0"
+current = false
+
+[[repos.themes]]
+name = "Desire"
+repository = "https://github.com/copypasteonly/Desire"
+commit = "*"
+version = "0.1"
+leftwm_versions = "^0.4.0"
+current = false
+
+[[repos.themes]]
+name = "plan9"
+repository = "https://github.com/seabassapologist/leftwm-theme-plan9"
+commit = "*"
+version = "0.1.0"
+leftwm_versions = "^0.3.0"
+current = false
+
+[[repos.themes]]
+name = "Serika"
+repository = "https://github.com/VuiMuich/leftwm-theme-serika.git"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = ">=0.3.0"
+current = false
+
+[[repos.themes]]
+name = "Blood-Moon"
+repository = "https://github.com/zawesomekid/Blood-Moon-leftwm-theme"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = ">0.3.0"
+current = false
+
+[[repos.themes]]
+name = "Late-Night"
+repository = "https://github.com/JacoMalan1/LateNight"
+commit = "*"
+version = "0.0.2"
+leftwm_versions = ">0.3.0"
+current = false
+
 [[repos]]
 url = "localhost"
 name = "LOCAL"
 definitions_version = 1
-themes = []
+
+[[repos.themes]]
+name = "eduinlight-theme"
+directory = "/home/light/.config/leftwm/themes/eduinlight-theme"
+version = "0.0.0"
+leftwm_versions = "*"
+current = true

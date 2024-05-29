@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
-export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+export SCRIPTPATH="$(
+  cd "$(dirname "$0")"
+  pwd -P
+)"
 
 #down the last running theme
 if [ -f "/tmp/leftwm-theme-down" ]; then
-    /tmp/leftwm-theme-down
-    rm /tmp/leftwm-theme-down
+  /tmp/leftwm-theme-down
+  rm /tmp/leftwm-theme-down
 fi
 ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 
 #boot picom or compton if it exists
+#this is for windows animations, fades etc.
 if [ -x "$(command -v picom)" ]; then
   picom &> /dev/null &
 elif [ -x "$(command -v compton)" ]; then
@@ -24,25 +28,24 @@ if [ -x "$(command -v feh)" ]; then
 fi
 
 index=0
-monitors="$(polybar -m | sed s/:.*//)"
-leftwm-state -q -n -t $SCRIPTPATH/sizes.liquid | sed -r '/^\s*$/d' | while read -r width x y
-do
+monitors=$(polybar -m | awk '{ split($1,a,":"); print(a[1]) }')
+leftwm-state -q -n -t $SCRIPTPATH/sizes.liquid | sed -r '/^\s*$/d' | while read -r width x y; do
   let indextemp=index+1
-  monitor=$(sed "$indextemp!d" <<<"$monitors")
+  monitor=$(sed "$indextemp!d" <<< "$monitors")
   barname="mainbar$index"
   monitor=$monitor offset=$x width=$width polybar -c $SCRIPTPATH/polybar.config $barname &> /dev/null &
   let index=indextemp
 done
 
 if [ -x "$(command -v xscreensaver)" ]; then
-  xscreensaver -no-splash&
+  xscreensaver -no-splash &
 fi
 
 if [ -x "$(command -v polkit-dumb-agent)" ]; then
-  polkit-dumb-agent&
+  polkit-dumb-agent &
 fi
 
 if [ -x "$(command -v dunst)" ]; then
   cp $SCRIPTPATH/dunstrc ~/.config/dunst/dunstrc
-  dunst&
+  dunst &
 fi
