@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# NOTE: just copy this folder in ~/.config/rofi/launchers/slate/
+
 ## Author  : Aditya Shakya
 ## Mail    : adi1090x@gmail.com
 ## Github  : @adi1090x
