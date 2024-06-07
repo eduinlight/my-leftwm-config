@@ -4,6 +4,11 @@ export SCRIPTPATH="$(
   pwd -P
 )"
 
+#start network manager applet
+if [ -x "$(command -v nm-applet)"]; then
+  nm-applet &
+fi
+
 #down the last running theme
 if [ -f "/tmp/leftwm-theme-down" ]; then
   /tmp/leftwm-theme-down
