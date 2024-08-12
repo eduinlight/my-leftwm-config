@@ -86,7 +86,7 @@
       ( command: Execute, value: "scrot ~/Pictures/%Y-%m-%d_$wx$h.jpeg -s -e 'xclip -selection clipboard -t image/png -i $f'", modifier: ["modkey"], key: "Print" ),
       ( command: Execute, value: "google-chrome-stable", modifier: ["modkey"], key: "b" ),
       ( command: Execute, value: "nemo", modifier: ["modkey"], key: "e" ),
-      ( command: Execute, value: "~/.config/leftwm/themes/eduinlight-theme/rofi/launcher.sh", modifier: ["modkey", "Shift"], key: "Return" ),
+      ( command: Execute, value: "rofi -show run -theme slate_right", modifier: ["modkey", "Shift"], key: "Return" ),
       ( command: Execute, value: "alacritty", modifier: ["modkey"], key: "Return" ),
       ( command: CloseWindow, value: "", modifier: ["modkey", "Shift"], key: "q" ),
       ( command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r" ),
