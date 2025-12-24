@@ -60,7 +60,9 @@
     scratchpad: [
         // (name: "Alacritty", value: "wezterm", x: 860, y: 390, height: 300, width: 200),
     ],
-    window_rules: [],
+    window_rules: [
+        (window_class: "dota2", spawn_on_tag: None, spawn_floating: None, spawn_fullscreen: true),
+    ],
     disable_current_tag_swap: true,
     disable_tile_drag: false,
     disable_window_snap: true,
