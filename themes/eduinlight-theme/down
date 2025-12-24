@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+SCRIPTPATH="$(
+  cd "$(dirname "$0")"
+  pwd -P
+)"
 
 #set background
 if [ -x "$(command -v feh)" ]; then
@@ -15,3 +18,4 @@ pkill polybar
 pkill xscreensaver
 pkill polkit-dumb-agent
 pkill dunst
+pkill flameshot
